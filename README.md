@@ -6,3 +6,7 @@
  ### Video of its functionality
  
  
+You will need an "env file that has your code base enviromental variables.  Please do the following:
+
+
+`touch .env`
