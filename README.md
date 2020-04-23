@@ -6,7 +6,16 @@
  ### Video of its functionality
  
  
-You will need an "env file that has your code base enviromental variables.  Please do the following:
+You will need an "env file that has your code base enviromental variables.  
 
 
-`touch .env`
+Please create an ".env" file in the root of the project's directory.
+
+Then place the contents here inside it
+
+```
+MONGO_URI="mongodb+srv://corey:1234password@nodeapi-70ovy.mongodb.net/test?retryWrites=true&w=majority"
+
+PORT=8080
+```
+
