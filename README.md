@@ -14,7 +14,7 @@ Please create an ".env" file in the root of the project's directory.
 Then place the contents here inside it
 
 ```
-MONGO_URI="mongodb+srv://corey:1234password@nodeapi-70ovy.mongodb.net/test?retryWrites=true&w=majority"
+MONGO_URI="mongodb+srv://YourUserNameHere:YourPasswordHere@TheURLofServer/test?retryWrites=true&w=majority"
 
 PORT=8080
 ```
