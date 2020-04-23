@@ -13,7 +13,10 @@
   "author": "Corey Albright",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "mongodb": "^3.5.6",
+    "mongoose": "^5.9.10",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.3"
   }
