@@ -1,8 +1,0 @@
-#!/bin/bash
-
-echo "# nodeJS_SocialMediaSite" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin git@github.com:Hawaiideveloper/nodeJS_SocialMediaSite.git
-git push -u origin master
