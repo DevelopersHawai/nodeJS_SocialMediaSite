@@ -19,3 +19,4 @@ MONGO_URI="mongodb+srv://YourUserNameHere:YourPasswordHere@TheURLofServer/test?r
 PORT=8080
 ```
 
+For more information on [NodeJs Security](https://docs.mongodb.com/manual/core/security-scram/) or [Connections drivers](https://docs.mongodb.com/drivers/node) visit the corresponding links mentioned within this sentence.
