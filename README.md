@@ -3,7 +3,7 @@
 
  
  
-You will need an "env file that has your code base enviromental variables.  
+You will need a database connection called [MongoDB](https://www.mongodb.com/cloud/atlas) an "env file that has your code base enviromental variables.  
 
 
 Please create an ".env" file in the root of the project's directory.
