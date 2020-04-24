@@ -4,7 +4,7 @@
  
  
 You will need:  
-- [ ] database connection called [MongoDB](https://www.mongodb.com/cloud/atlas) 
+- [ ] database connection called [MongoDB](https://www.mongodb.com/cloud/atlas) See Mondo_DB_Branch for the basics.
 - [ ] an "env file that has your code base enviromental variables.  
 
 
