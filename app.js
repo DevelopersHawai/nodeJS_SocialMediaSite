@@ -2,8 +2,8 @@ const express = require("express");
 const app = express();
 const morgan = require("morgan");
 const mongoose = require('mongoose');
-const dotnev = require('dotenv');
-dotnev.config();
+const dotenv = require('dotenv');
+dotenv.config();
 
 
 
@@ -13,7 +13,7 @@ dotnev.config();
 
 
 // Database Connection String goes here
-
+// // // Local Database is located at: mongodb://localhost/nodeapi
 
 mongoose
     .connect(
