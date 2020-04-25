@@ -5,7 +5,7 @@ const morgan = require("morgan");
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const bodyParser = require('body-parser');
-const expressValidator = require("express-validator");
+const expressValidator = require('express-validator');
 dotenv.config();
 
 
