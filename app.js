@@ -1,9 +1,11 @@
+//02:13
 const express = require("express");
 const app = express();
 const morgan = require("morgan");
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const bodyParser = require('body-parser');
+const expressValidator = require("express-validator");
 dotenv.config();
 
 
@@ -42,8 +44,8 @@ const postRoutes = require("./routes/post");
 
 //middleware
 app.use(morgan('dev'));
-app.use(bodyParser.json());
-
+app.use(bodyParser.json()); // enables the body to be parsed otherwise you would see title only
+app.use(expressValidator());
 app.use("/", postRoutes);
 
 const port = process.env.PORT;
