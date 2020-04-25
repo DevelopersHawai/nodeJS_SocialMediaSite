@@ -3,6 +3,7 @@ const app = express();
 const morgan = require("morgan");
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
+const bodyParser = require('body-parser');
 dotenv.config();
 
 
@@ -13,16 +14,16 @@ dotenv.config();
 
 
 // Database Connection String goes here
-// // // Local Database is located at: mongodb://localhost/nodeapi
+// // // Local Database is located at: mongodb://localhost
 
 mongoose
     .connect(
-        process.env.MONGO_URI,
+        process.env.MONGO_URI, {
         
         //The line below uses Unified Topology & New URL Parser
-        { useUnifiedTopology: true, useNewUrlParser: true },
-        )
-.then(() => console.log('Database is connected')); 
+        useUnifiedTopology: true, useNewUrlParser: true 
+        })
+.then(() => console.log('Database is now connected...', )); 
 mongoose.connection.on("error", err => {
    console.log('Connection Error with Database: ${err.message}');
 
@@ -41,10 +42,13 @@ const postRoutes = require("./routes/post");
 
 //middleware
 app.use(morgan('dev'));
+app.use(bodyParser.json());
 
 app.use("/", postRoutes);
 
-const port = process.env.PORT || 8080;
+const port = process.env.PORT;
+const mongoURI = process.env.MONGO_URI;
 app.listen(port, () => {
     console.log(`A Node JS API is listening on port: ${port}`);
+    console.log(`A Database operating and on connection to: ${mongoURI}`);
 });
