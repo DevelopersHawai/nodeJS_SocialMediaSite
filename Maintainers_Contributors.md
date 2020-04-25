@@ -4,4 +4,9 @@
 - [ ] Can also be authors or owners of the project
 
 
+|Name of Author   |   |Contribution   |   | Link  |
+|---|---|---|---|---|
+|   |   |   |   |   |
+|   |   |   |   |   |
+|   |   |   |   |   |
 -- If you would like to contribute email me at: hawaiideveloper@gmail.com --
