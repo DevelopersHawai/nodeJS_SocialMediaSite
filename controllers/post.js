@@ -1,8 +1,23 @@
-
+const Post = require('../models/post')
 
 exports.getPosts = (req, res) => {
     res.json({
-        posts: [{title: "Corey you are doing a great job and GOD is proud of you, keep going"}, { title: " Second thing is the secret to getting things done is to turn phone off and put headphones on and focus on one task at a time"}]
+        posts: [{title: "First post" }, { title: "second post" }]
     });
- 
+};
+
+
+exports.createPost = (req, res) => {
+    const post = new Post(req.body); 
+    console.log("Creating  post: ", req.body);
+    //post.save((err, result) => {
+     //   if(err) {
+    //        return res.status(400).json({
+   //             error: err
+   //         })
+  //      }
+ //       res.status(200).json({
+  //          post: result
+  //      });
+  //  });
 };
