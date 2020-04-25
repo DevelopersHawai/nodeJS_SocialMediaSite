@@ -18,7 +18,7 @@ exports.createPostValidator = (req, res, next) => {
          // error show the first one as rhey happen
          
          if(errors) {
-             const firstError = errors.map((error => error.msg)[0];
+             const firstError = errors.map(error => error.msg)[0];
              return res.status(400).json({error: firstError});
          }
          // Proceed to next middleware
