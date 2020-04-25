@@ -4,4 +4,4 @@
 - [ ] Can also be authors or owners of the project
 
 
-- If you would like to contribute email me at: hawaiideveloper@gmail.com
+-- If you would like to contribute email me at: hawaiideveloper@gmail.com --
