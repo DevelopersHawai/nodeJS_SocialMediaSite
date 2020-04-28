@@ -1,6 +1,8 @@
 # Node JS project for a social media site
 
+If you have not done so, please do so now and familiarize yourself with the issues tab.
 
+Issues are going to be the fastest way to answer your own questions and to ask for help.  
  
  
 You will need:  
