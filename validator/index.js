@@ -2,8 +2,8 @@
 
 exports.createPostValidator = (req, res, next) => {
     //title
-    req.check("title", "Write a title").notEmtpy();
-    req.check("title", "title must be between 4 to 200 characters").isLength({
+    req.check('title', "write a title").notEmtpy();
+    req.check('title', "title must be between 4 to 200 characters").isLength({
         min: 4,
         max: 200
     }); 
