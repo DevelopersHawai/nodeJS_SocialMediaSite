@@ -12,6 +12,9 @@ You will need:
 
 Please create an ".env" file in the root of the project's directory.
 
+
+
+
 Then place the contents here inside it
 
 ```
@@ -21,3 +24,8 @@ PORT=8080
 ```
 
 For more information on [NodeJs Security](https://docs.mongodb.com/manual/core/security-scram/) or [Connections drivers](https://docs.mongodb.com/drivers/node) visit the corresponding links mentioned within this sentence.
+
+
+#### To Start the project out of the box:
+- [ ] type: `npm install` inside a terminal window
+    - [ ] If you have issues verify that the package.json mataches what I have
