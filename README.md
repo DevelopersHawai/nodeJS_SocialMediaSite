@@ -15,7 +15,10 @@ Please create an ".env" file in the root of the project's directory.
 
 
 
-Then place the contents here inside it
+## Then place the contents here inside it (.env)
+### Read how to setup a MongoDB  Atlast cluster and connecting to it using NodeJS API here below:
+[Setting up](https://docs.atlas.mongodb.com/tutorial/create-new-cluster/) a MondoDB Cluster
+[Connecting to a MondoDB Cluster](https://docs.atlas.mongodb.com/driver-connection/) using NodeJS
 
 ```
 MONGO_URI="mongodb+srv://YourUserNameHere:YourPasswordHere@TheURLofServer/test?retryWrites=true&w=majority"
