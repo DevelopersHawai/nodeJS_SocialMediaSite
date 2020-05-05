@@ -1,18 +1,19 @@
 const mongoose = require("mongoose");
-const uuidv1 = require('uuid/v1');
+//const uuidv1 = require('uuid/v1'); //breaks it and fails so I use var instead
 const crypto = require('crypto');
+var uuidv1 = require('uuidv1');
 
 
 // This where we set the scaffold to receive the profile creation
 const userSchema = new mongoose.Schema({
     name: {
         type: String,
-        trim: ture,
+        trim: true,
         required: true
     },
     email: {
         type: String,
-        trim: ture,
+        trim: true,
         required: true
     },
     hashed_password: {

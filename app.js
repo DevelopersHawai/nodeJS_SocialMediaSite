@@ -37,6 +37,7 @@ mongoose.connection.on("error", err => {
 
 // Import the routes 
 const postRoutes = require("./routes/post");
+const authRoutes = require("./routes/auth");
 
 //const myOwnMiddleware = (req, res, next) => {
 //    console.log("Middleware applied!!!");
@@ -48,6 +49,8 @@ app.use(morgan('dev'));
 app.use(bodyParser.json()); // enables the body to be parsed otherwise you would see title only
 app.use(expressValidator());
 app.use("/", postRoutes);
+app.use("/", authRoutes);
+
 
 const port = process.env.PORT;
 const mongoURI = process.env.MONGO_URI;
