@@ -29,3 +29,4 @@ For more information on [NodeJs Security](https://docs.mongodb.com/manual/core/s
 #### To Start the project out of the box:
 - [ ] type: `npm install` inside a terminal window
     - [ ] If you have issues verify that the package.json mataches what I have
+    - [ ] Once you get back all greens and no errors.... run `npm run dev`
