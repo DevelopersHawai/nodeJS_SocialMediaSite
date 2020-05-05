@@ -13,4 +13,17 @@ const userSchema = new mongoose.Schema({
         type: String,
         trim: ture,
         required: true
+    },
+    hashed_password: {
+        type: String,
+        required: true
+    },
+    salt: String,
+    created: {
+        type: Date,
+        default: Date.now
+    },
+    updated: Date
 })
+
+module.exports = mongoose.model("User", userSchema);
