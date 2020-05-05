@@ -9,5 +9,5 @@ exports.signup = async (req, res) => {
     })
     const user = await new User(req.body)
     await user.save()
-    res.status(200).json({user});
+    res.status(200).json({message: "Signup Successful! Please login"});
 }
