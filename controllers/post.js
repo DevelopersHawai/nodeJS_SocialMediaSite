@@ -5,8 +5,9 @@ const Post = require('../models/post')
 //Prints all posts to (postman) screen
 exports.getPosts = (req, res) => {
     const posts = Post.find()
+    .select("_id title body")
     .then((posts) => {
-        res.status(200).json({posts: posts});
+        res.json({ posts });
     })
     // if error is found it will print the error to the console log
     .catch(err => console.log(err));
@@ -25,7 +26,7 @@ exports.createPost = (req, res) => {
    //         post: result
    //     });
    post.save().then(result => {
-       res.status(200).json({
+       res.json({
            post: result
        });
    });
