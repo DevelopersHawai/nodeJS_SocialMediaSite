@@ -26,4 +26,8 @@ const userSchema = new mongoose.Schema({
     updated: Date
 })
 
+/**
+ * Virtual fields are not persisted to the database
+ */
+
 module.exports = mongoose.model("User", userSchema);
