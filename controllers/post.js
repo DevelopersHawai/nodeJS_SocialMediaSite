@@ -2,11 +2,14 @@
 //It uses the file within model called post which sets the formatting
 const Post = require('../models/post')
 
-//Good point to review later
+//Prints all posts to (postman) screen
 exports.getPosts = (req, res) => {
-    res.json({
-        posts: [{title: "First post" }, { title: "second post" }]
-    });
+    const posts = Post.find()
+    .then((posts) => {
+        res.status(200).json({posts: posts});
+    })
+    // if error is found it will print the error to the console log
+    .catch(err => console.log(err));
 };
 
 exports.createPost = (req, res) => {
