@@ -4,6 +4,7 @@
 //Based on jsonwebtoken
 const express = require("express");
 const { signup, signin, signout } = require("../controllers/auth");
+const { userById } = require("../controllers/user");
 //const {createPost} = require("../controllers/post");  //This is using the "object destructuring"
 const {userSignupValidator} = require("../validator"); // you dont need to put index
 
@@ -17,6 +18,10 @@ router.post("/signup", userSignupValidator, signup); //validator method
 router.post("/signin", signin); //signin
 router.get("/signout", signout); //signout
 //The above line looks at the app for middleware
+
+
+//any route containing userId, our app will first execute userByID
+router.param("userID", userById);
 
 //Then we package the entire file as a function to be used as "router" later
 module.exports = router;
