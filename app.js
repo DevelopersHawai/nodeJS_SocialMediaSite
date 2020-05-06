@@ -5,6 +5,7 @@ const morgan = require("morgan");
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const bodyParser = require('body-parser');
+var cookieParser = require('cookie-parser');
 const expressValidator = require('express-validator');
 
 dotenv.config();
@@ -47,6 +48,7 @@ const authRoutes = require("./routes/auth");
 //middleware
 app.use(morgan('dev'));
 app.use(bodyParser.json()); // enables the body to be parsed otherwise you would see title only
+app.use(cookieParser.json());
 app.use(expressValidator());
 app.use("/", postRoutes);
 app.use("/", authRoutes);

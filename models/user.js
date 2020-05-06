@@ -47,6 +47,9 @@ const userSchema = new mongoose.Schema({
  })
 // methods to our schema [ our encryption process]
 userSchema.methods = {
+    authenticate: function(plainText) {
+return this.encryptPassword(plainText) === this.hashed_password
+    },
     encryptPassword: function(password) {
         if(!password) return "";
         try {
