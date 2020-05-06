@@ -3,12 +3,13 @@
 const express = require("express");
 const {getPosts, createPost} = require("../controllers/post");
 //const {createPost} = require("../controllers/post");  //This is using the "object destructuring"
+const { requireSignin } = require("../controllers/auth"); //middleware to the get amd post routes
 const {createPostValidator} = require("../validator"); // you dont need to put index
 
 //The router allows us to get receive information
 const router = express.Router();
 
-router.get("/", getPosts);
+router.get("/", requireSignin, getPosts);
 
 // The router here allows us to post information
 router.post("/post", createPostValidator, createPost); //validator method
