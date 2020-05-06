@@ -13,6 +13,9 @@ next();
     });
 };
 
+
+// Shout out to Ryan Dhungel for this awesome method
+//
 exports.hasAuthorization = (req, res, next) => {
     const authorized = req.profile && req.auth && req.profile._id === req.auth._id
     if(!authorized) {
