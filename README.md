@@ -2,7 +2,11 @@
 
 #### To start the project please delete any node_module folders you may have folder
 
+Issue command: This will install all dependencies 
+`npm install`
 
+Finally issue comand 
+`npm run dev`
 
 If you have not done so, please do so now and familiarize yourself with the issues tab.
 
