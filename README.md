@@ -1,4 +1,4 @@
-# Node JS project for a social media site
+# Node JS project for a social media site version 1.0
 
 ### Please checkout the latest branch for the lastest newest features available in this project.
 As this project will be updated nightly and tested daily, until its completion.
