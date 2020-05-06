@@ -1,5 +1,9 @@
 # Node JS project for a social media site
 
+#### To start the project please delete any node_module folders you may have folder
+
+
+
 If you have not done so, please do so now and familiarize yourself with the issues tab.
 
 Issues are going to be the fastest way to answer your own questions and to ask for help.  
