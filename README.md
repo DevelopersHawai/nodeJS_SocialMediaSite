@@ -33,4 +33,4 @@ For more information on [NodeJs Security](https://docs.mongodb.com/manual/core/s
 - [ ] type: `npm install` inside a terminal window
     - [ ] If you have issues verify that the package.json mataches what I have
     - [ ] Once you get back all greens and no errors.... run `npm run dev`
-    - [ ] Owe one more thing.  createPostValidator changed the game when keeping spam profiles out.
+    - [ ] createPostValidator changed the game when keeping spam profiles out.
