@@ -10,7 +10,7 @@ who understand the basic instructions below are able to view the project as func
 .. Latest branch was recorded [here](https://github.com/Hawaiideveloper/nodeJS_SocialMediaSite/branches)
  
  
-What you ou will need to get started is:
+What you  will need to get started is:
 - [ ] Node.js  
 - [ ] Database connection called [MongoDB](https://www.mongodb.com/cloud/atlas) 
 - [ ] an "env" file that has your code based enviromental variables.  
