@@ -1,6 +1,7 @@
 //12:19
 //require express so that we can use the router
 //Now adding User Signin
+//Based on jsonwebtoken
 const express = require("express");
 const { signup } = require("../controllers/auth");
 //const {createPost} = require("../controllers/post");  //This is using the "object destructuring"
