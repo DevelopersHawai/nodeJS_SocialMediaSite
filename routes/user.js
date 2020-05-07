@@ -5,7 +5,8 @@ const {requireSignin } = require("../controllers/auth");
 const router = express.Router();
 
 router.get("/users", allUsers);
-router.get("/user/:userId", requireSignin, getUser); // part of the controllers user to show single user
+router.get("/user/:userId", requireSignin, getUser); // part of the controllers user to show single user //but 
+//you need to sign in first  you need a token first
 
 // The router here allows us to post information
 // router.post("/signup", userSignupValidator, signup); //validator method
