@@ -42,10 +42,13 @@ For more information on [NodeJs Security](https://docs.mongodb.com/manual/core/s
     - [ ] If you have issues verify that the package.json mataches what I have
     - [ ] Once you get back all greens and no errors.... run `npm run dev`
     - [ ] createPostValidator changed the game when keeping spam profiles out.
-    - [ ] Manage Users is the sweet spot where I went to sleep at 2:53am EST May 6, 2020 figuring it out "ha ha"
-      - [x] Showing all users  (`is` public but no identifying information of other users unless login)  
+    - [ ] Manage CRUD Users is the sweet spot where I went to sleep at 2:53am EST May 6, 2020 figuring it out "ha ha"
+      - [x] Showing / Read all users  (`is` public but no identifying information of other users unless login)  
       - [x] Show a user profile
-      - [x] Setup Tokens for users so required sign is needed to view other users' profile
+      - [x] Create and Setup Tokens for users so required sign is needed to view other users' profile
       - [x] Update User complete, as user must be authenticated to update their own profile
-      - [ ] Delete User
+      - [x] Delete User, Now accessible, for those who want to terminate membership, provides a message similar to:
+```
+ "User Deleted successfully"
+```
 
