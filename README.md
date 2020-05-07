@@ -42,7 +42,7 @@ For more information on [NodeJs Security](https://docs.mongodb.com/manual/core/s
     - [ ] If you have issues verify that the package.json mataches what I have
     - [ ] Once you get back all greens and no errors.... run `npm run dev`
     - [ ] createPostValidator changed the game when keeping spam profiles out.
-    - [ ] Manage Users is the sweet spot where I went to sleep at 2:53am EST May 6, 2020
+    - [ ] Manage Users is the sweet spot where I went to sleep at 2:53am EST May 6, 2020 figuring it out "ha ha"
       - [x] Showing all users   
-      - [ ] Show a user profile
+      - [x] Show a user profile
 
