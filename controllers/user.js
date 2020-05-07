@@ -65,3 +65,18 @@ exports.updateUser = (req, res, next) => {
 
     });
 };
+
+//Deletes the user
+exports.deleteUser = (req, res, next) => {
+    let user = req.profile;
+    user.remove((err, user) => {
+        if(err) {
+            return res.status(400).json({
+                error: err
+            })
+        } 
+        req.profile.hashed_password = undefined;
+          req.profile.salt = undefined;
+          res.json({user});
+    });
+};
