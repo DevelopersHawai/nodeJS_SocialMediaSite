@@ -40,6 +40,8 @@ exports.allUsers = (req, res ) => {
 };
 
 exports.getUser = (req, res) => {     //This is what makes a single profile work single user view
-return res.json(req.profile);
+req.profile.hashed_password = undefined;  //Hides the password from average users
+req.profile.salt = undefined;
+    return res.json(req.profile);
 
 };
