@@ -77,6 +77,6 @@ exports.deleteUser = (req, res, next) => {
         } 
         req.profile.hashed_password = undefined;
           req.profile.salt = undefined;
-          res.json({user});
+          res.json({user, message: "User Deleted successfully, sorry to see you go :("});
     });
 };
