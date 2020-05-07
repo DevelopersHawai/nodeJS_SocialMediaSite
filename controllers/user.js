@@ -34,5 +34,7 @@ exports.allUsers = (req, res ) => {
             })
         }
         res.json({ users });
-    });
+    }).select("name email updated created"); // This is where you print back to all user function
+    // You should make it kick back only usernames of people, but the usernames are by company name
+    //So that they can do business quickly
 };
