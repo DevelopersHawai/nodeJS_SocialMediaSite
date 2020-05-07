@@ -46,5 +46,6 @@ For more information on [NodeJs Security](https://docs.mongodb.com/manual/core/s
       - [x] Showing all users  (`is` public but no identifying information of other users unless login)  
       - [x] Show a user profile
       - [x] Setup Tokens for users so required sign is needed to view other users' profile
-      - [ ] Update User
+      - [x] Update User complete, as user must be authenticated to update their own profile
+      - [ ] Delete User
 
