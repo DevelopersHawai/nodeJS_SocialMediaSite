@@ -1,10 +1,11 @@
 const express = require("express");
-const { userById, allUsers } = require("../controllers/user");
+const { userById, allUsers, getUser } = require("../controllers/user");  //getUser imported by object destruct
 
 //The router allows us to get receive information
 const router = express.Router();
 
 router.get("/users", allUsers);
+router.get("/user/:userId", getUser); // part of the controllers user to show single user
 
 // The router here allows us to post information
 // router.post("/signup", userSignupValidator, signup); //validator method
@@ -14,7 +15,7 @@ router.get("/users", allUsers);
 
 
 //any route containing userId, our app will first execute userByID
-router.param("userID", userById);
+router.param("userId", userById);
 
 //Then we package the entire file as a function to be used as "router" later
 module.exports = router;
