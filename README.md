@@ -43,6 +43,7 @@ For more information on [NodeJs Security](https://docs.mongodb.com/manual/core/s
     - [ ] Once you get back all greens and no errors.... run `npm run dev`
     - [ ] createPostValidator changed the game when keeping spam profiles out.
     - [ ] Manage Users is the sweet spot where I went to sleep at 2:53am EST May 6, 2020 figuring it out "ha ha"
-      - [x] Showing all users   
+      - [x] Showing all users  (`is` public but no identifying information of other users unless login)  
       - [x] Show a user profile
+      - [x] Setup Tokens for users so required sign is needed to view other users' profile
 
