@@ -38,3 +38,8 @@ exports.allUsers = (req, res ) => {
     // You should make it kick back only usernames of people, but the usernames are by company name
     //So that they can do business quickly
 };
+
+exports.getUser = (req, res) => {     //This is what makes a single profile work single user view
+return res.json(req.profile);
+
+};
