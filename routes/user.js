@@ -1,11 +1,5 @@
-//require express so that we can use the router
-//Now adding User Signin
-//Based on jsonwebtoken
 const express = require("express");
-const { signup, signin, signout } = require("../controllers/auth");
 const { userById } = require("../controllers/user");
-//const {createPost} = require("../controllers/post");  //This is using the "object destructuring"
-const {userSignupValidator} = require("../validator"); // you dont need to put index
 
 //The router allows us to get receive information
 const router = express.Router();
