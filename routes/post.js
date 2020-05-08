@@ -13,7 +13,10 @@ const router = express.Router();
 router.get("/", getPosts);
 
 // The router here allows us to post information
-router.post("/post", requireSignin, createPostValidator, createPost); //validator method
+router.post("/post/new/:useId", 
+requireSignin, createPost,
+createPostValidator, 
+createPost ); //validator method
 //The above line looks at the app for middleware
 
 //any route containing userId, our app will first execute userByID

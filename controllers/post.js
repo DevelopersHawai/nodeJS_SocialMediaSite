@@ -15,13 +15,13 @@ exports.getPosts = (req, res) => {
 };
 
 exports.createPost = (req, res) => {
-    let form = new formidable.IncomingForm()
+    let form = new formidable.IncomingForm();
     form.keepExtensions = true
-    form.parse(req, (fields, files) => {
-if(err) {
+    form.parse(req, (err, fields, files) => {
+if (err) {
     return res.stus(400).json({
         error: "Image could not be uploaded"
-    })
+    });
 }
 //I will review this one a few more times as this is where the magic happens
     let post = new Post(fields)
@@ -37,8 +37,8 @@ if(err) {
             })
         }
         res.json(result)
-    })
-    })
+    });
+    });
 
    // const post = new Post(req.body);
     //console.log("Creating  post: ", req.body);
