@@ -52,5 +52,6 @@ For more information on [NodeJs Security](https://docs.mongodb.com/manual/core/s
  "User Deleted successfully"
 ```
 - [ ] User Posts:
-    - [ ] Add photo
-    - [ ] Add text 
+    - [x] Add title
+    - [x] Add body 
+    - [ ] Add photo(s)
