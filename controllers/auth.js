@@ -1,3 +1,10 @@
+// It needs a way to be locked and email recovery to unlock it 
+// After 3 attempts, it should say lock
+// Automatically alert user of bad attempts
+// Apply boolean option of lock
+// Require email reset
+//Or text your phone
+
 const jwt = require('jsonwebtoken');
 require('dotenv').config();
 const expressJwt = require('express-jwt')
@@ -19,25 +26,18 @@ exports.signin = (req, res) => {
     //find the user based on email
 const { email, password } = req.body;
 User.findOne({ email }, (err, user) => {
-    // if error or no user 
-if (err || !user) {
+
+if (err || !user) {  //if error or no user
     return req.status(401).json({
         error: "User with the email entered does not exist.  Please signup!"
     });
-}
- 
-// If user is located then we authenticate  & create authenticate model and use here:
-if(!user.authenticate(password)) {
+} 
+if(!user.authenticate(password)) { // If user exists, but the passowrd is wrong
     return req.status(401).json({
         error: "User with the email entered does not exist or does not match.  Please signup!"
 });
 }
-// It needs a way to be locked and email recovery to unlock it 
-// After 3 attempts, it should say lock
-// Automatically alert user of bad attempts
-// Apply boolean option of lock
-// Require email reset
-//Or text your phone
+
 
 
     // generate a token user id and secret

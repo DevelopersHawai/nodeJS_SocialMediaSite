@@ -1,4 +1,4 @@
-//12:19
+// The router here allows us to post information and to go to working links
 //require express so that we can use the router
 const express = require("express");
 const {getPosts, createPost} = require("../controllers/post");
@@ -12,15 +12,12 @@ const router = express.Router();
 
 router.get("/", getPosts);
 
-// The router here allows us to post information
-router.post("/post/new/:useId", 
-requireSignin, createPost,
-createPostValidator 
- ); //validator method
+
+router.post("/post/new/:userId", requireSignin, createPost, createPostValidator ); //validator method
 //The above line looks at the app for middleware
 
 //any route containing userId, our app will first execute userByID
-router.param("userID", userById);
+router.param("userId", userById);  // this broke the postedby ; so I used the corret "case" of letter 'D'
 
 //Then we package the entire file as a function to be used as "router" later
 module.exports = router;
