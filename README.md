@@ -67,3 +67,7 @@ Looking for offending file that causes git to hang.  Once I find it, I will use
 git rm and then reference the video on youtube.
 
 The above is due to the large file sizes embeded into the project.
+
+I had to rebase the github repo due to a large file
+
+SHA 0d2b02ab8ec0cd2ed8846f93d91ceb904fadd6e has been changed
