@@ -71,3 +71,7 @@ The above is due to the large file sizes embeded into the project.
 I had to rebase the github repo due to a large file
 
 SHA 0d2b02ab8ec0cd2ed8846f93d91ceb904fadd6e has been changed
+
+Issued command 
+
+'git filter-branch --index-filter 'git rm -r --cached --ignore-unmatch videos_of_progress' HEAD'
