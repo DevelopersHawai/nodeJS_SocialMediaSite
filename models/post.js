@@ -3,25 +3,22 @@ const {ObjectId} = mongoose.Schema
 const postSchema = new mongoose.Schema({
     title: {
         type: String,
-        required: true
-       
-        
+        required: true        
     },
     body: {
         type: String,
         required: true
-        
-
     },
     photo: {
         type: Buffer,
         contentType: String
 
     },
-        postedBy: {
-            type: ObjectId,
-            ref: "User"
+    postedBy: {
+        type: ObjectId,
+        ref: 'User' //Changed to single quote
         },
+
         created: {
             type: Date,
             default: Date.now
