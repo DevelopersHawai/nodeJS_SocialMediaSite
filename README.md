@@ -63,5 +63,7 @@ Known issues to contributors outside of the USA
 If git gives you an issue like:
 "fatal: The remote end hung up unexpectedly"
 Please run `git config http.postBuffer 524288000`
+Looking for offending file that causes git to hang.  Once I find it, I will use
+git rm and then reference the video on youtube.
 
 The above is due to the large file sizes embeded into the project.
