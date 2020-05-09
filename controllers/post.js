@@ -6,7 +6,7 @@ const fs = require('fs');
 //Prints all posts to (postman) screen
 exports.getPosts = (req, res) => {
     const posts = Post.find()
-    .select("_id title body")
+    .select("_id title body ")
     .then((posts) => {
         res.json({ posts });
     })
@@ -16,7 +16,7 @@ exports.getPosts = (req, res) => {
 
 exports.createPost = (req, res) => {
     let form = new formidable.IncomingForm();
-    form.keepExtensions = true
+    form.keepExtensions = true;
     form.parse(req, (err, fields, files) => {
 if (err) {
     return res.stus(400).json({
@@ -24,11 +24,15 @@ if (err) {
     });
 }
 //I will review this one a few more times as this is where the magic happens
-    let post = new Post(fields)
-    post.postedBy = req.profile
+    let post = new Post(fields);
+
+    req.profile.hashed_password =undefined;
+    req.profile.salt =undefined;
+    
+    post.postedBy = req.profile;
     if(files.photo) {
-        post.photo.data = fs.readFileSync(files.photo.path)
-        post.photo.contentType = files.photo.type
+        post.photo.data = fs.readFileSync(files.photo.path);
+        post.photo.contentType = files.photo.type;
     }
     post.save((err, result) => {
         if(err) {
@@ -58,3 +62,4 @@ if (err) {
   //  });
 
 };
+

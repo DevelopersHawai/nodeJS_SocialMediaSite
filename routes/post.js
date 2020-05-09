@@ -15,8 +15,7 @@ router.get("/", getPosts);
 // The router here allows us to post information
 router.post("/post/new/:useId", 
 requireSignin, createPost,
-createPost,
-createPostValidator, 
+createPostValidator 
  ); //validator method
 //The above line looks at the app for middleware
 

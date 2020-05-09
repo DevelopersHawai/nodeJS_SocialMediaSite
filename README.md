@@ -57,3 +57,9 @@ For more information on [NodeJs Security](https://docs.mongodb.com/manual/core/s
     - [ ] Add photo(s)
 
 * I found out that the video I made was taking too much time to pull and push.  Rather than modify the code base ridiciously, it is wiser to post to youtube and reference the link of its beginnings [here_link not ready]()
+
+If git gives you an issue like:
+"fatal: The remote end hung up unexpectedly"
+Please run `git config http.postBuffer 524288000`
+
+The above is due to the large file sizes embeded into the project.
