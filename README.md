@@ -55,4 +55,5 @@ For more information on [NodeJs Security](https://docs.mongodb.com/manual/core/s
     - [x] Add title (prints the input digested)
     - [x] Add body  (prints the input digested)
     - [ ] Add photo(s)
+    - [x] Get all posts by a user
 

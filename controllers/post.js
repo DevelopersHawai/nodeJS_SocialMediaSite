@@ -6,6 +6,7 @@ const fs = require('fs');
 //Prints all posts to (postman) screen
 exports.getPosts = (req, res) => {
     const posts = Post.find()
+    .populate('postedBy', '_id name')
     .select('_id title body ')
     .then(posts => {
         res.json({ posts });
