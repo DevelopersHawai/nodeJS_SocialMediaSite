@@ -16,7 +16,7 @@ const postSchema = new mongoose.Schema({
     },
     postedBy: {
         type: ObjectId,
-        ref: 'User' //Changed to single quote
+        ref: "User" //Changed to single quote as it might be effecting the model ref in route post indirectly
         },
 
         created: {
