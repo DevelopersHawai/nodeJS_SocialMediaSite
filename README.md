@@ -70,7 +70,7 @@ Implemented the re-usage of http codes so that the user is restricted within
     - [ ] Add photo(s)
     - [x] Get all posts by all users
     - [x] Get posts by a particular user
-    - [ ] Delete a post feature (so that people can save their reputation if things get wonky)
-      - [ ] In case someone tries to delete someone's else post they will be denied
-      - [ ] Security on the post to prevent random deletion
+    - [x] Delete a post feature (so that people can save their reputation if things get wonky)
+      - [x] In case someone tries to delete someone's else post they will be denied
+      - [x] Security on the post to prevent random deletion
 
