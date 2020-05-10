@@ -10,8 +10,7 @@ const {createPostValidator} = require("../validator"); // you dont need to put i
 //The router allows us to get receive information
 const router = express.Router();
 
-router.get("/", getPosts);
-// router.get("/", requireSignin, getPosts);  //if you decide to lock down public posts
+router.get("/", requireSignin, getPosts); // to lock down public posts
 
 router.post("/post/new/:userId", requireSignin, createPost, createPostValidator ); //validator method
 //The above line looks at the app for middleware

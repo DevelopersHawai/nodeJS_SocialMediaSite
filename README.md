@@ -57,4 +57,5 @@ For more information on [NodeJs Security](https://docs.mongodb.com/manual/core/s
     - [ ] Add photo(s)
     - [x] Get all posts by all users
     - [x] Get posts by a particular user
+    - [ ] Delete a post feature (so that people can save their reputation if things get wonky)
 
