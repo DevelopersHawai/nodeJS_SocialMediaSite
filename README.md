@@ -37,6 +37,19 @@ PORT=8080
 For more information on [NodeJs Security](https://docs.mongodb.com/manual/core/security-scram/) or [Connections drivers](https://docs.mongodb.com/drivers/node) visit the corresponding links mentioned within this sentence.
 
 
+Implemented the re-usage of http codes so that the user is restricted within 
+### HTTP Status Codes
+
+- 400 Bad Request.
+- 401 Unauthorized.
+- 402 Payment Required.
+- 403 Forbidden.
+- 404 Not Found.
+- 405 Method Not Allowed.
+- 406 Not Acceptable.
+- See more at link [here](error_code_definitions.md)
+
+
 #### To Start the project out of the box:
 - [ ] type: `npm install` inside a terminal window
     - [ ] If you have issues verify that the package.json mataches what I have
@@ -58,4 +71,6 @@ For more information on [NodeJs Security](https://docs.mongodb.com/manual/core/s
     - [x] Get all posts by all users
     - [x] Get posts by a particular user
     - [ ] Delete a post feature (so that people can save their reputation if things get wonky)
+      - [ ] In case someone tries to delete someone's else post they will be denied
+      - [ ] Security on the post to prevent random deletion
 

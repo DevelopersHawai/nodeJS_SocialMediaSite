@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const {ObjectId} = mongoose.Schema
+const {ObjectId} = mongoose.Schema //is the actual post
 const postSchema = new mongoose.Schema({
     title: {
         type: String,
@@ -14,9 +14,11 @@ const postSchema = new mongoose.Schema({
         contentType: String
 
     },
-    postedBy: {
+    //Changed to single quotes for consistency
+        // as it might be effecting the model ref in route post indirectly
+    postedBy: { //Assigns ObjectId as a post and makes it come from a user
         type: ObjectId,
-        ref: "User" //Changed to single quote as it might be effecting the model ref in route post indirectly
+        ref: 'User' 
         },
 
         created: {
