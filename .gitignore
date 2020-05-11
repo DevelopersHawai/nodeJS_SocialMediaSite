@@ -2,12 +2,6 @@ env
 .env
 .class
 .java
-
-
-
-
 node_modules/
 videos_of_progress/
-
-
 fullstack/
