@@ -1,4 +1,55 @@
-# Node JS project for a social media site
+# Node JS project for a small social media site is based on:
+MERN - MongoDB, Express, React, NodeJs
+
+## Why this project:
+
+When the [covid-19]() virus spread into the world, as of May 11, 2020 (19:26 GMT) there 4,235,237 cases of the virus and over 285,946 deaths.  People are concerned with socially interacting with one another physically and
+many nations have closed their borders to prevent the spread and contagious disaster from multiplying.
+
+
+
+### [Written in ES6 JavaScript](http://es6-features.org/#Constants) 
+___To ensure all browsers are funtional are functional, and the application can be used by:___
+- iOS
+- Android
+- Microsoft
+- Linux
+
+Choosing this platform for avoiding compatibility issues will be key to the usage of posterity.  As the platform evolves we will implement newer technoloies.
+ 
+### [ECMAScript](https://en.wikipedia.org/wiki/ECMAScript#10th_Edition_-_ECMAScript_2019):
+__The ECMAScript specification is a standardized specification of a scripting language developed by Brendan Eich of Netscape; initially it was named Mocha, later LiveScript, and finally JavaScript. In December 1995, Sun Microsystems and Netscape announced JavaScript in a press release.__
+
+
+
+### [NodeJs](https://nodejs.org/en/about/)
+___Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.  V8 is Google’s open source high-performance JavaScript and WebAssembly engine, written in C++. It is used in Chrome and in Node.js, among others. It implements ECMAScript and WebAssembly, and runs on Windows 7 or later, macOS 10.12+, and Linux systems that use x64, IA-32, ARM, or MIPS processors. V8 can run standalone, or can be embedded into any C++ application.___
+
+
+### [MongoDB](https://www.mongodb.com/download-center/community)
+___MongoDB Atlas is a fully-managed and fully-automated global cloud database service available on AWS, Azure, and Google Cloud.___
+which features the most comprehensive support and the best SLA when you run MongoDB on your own infrastructure. MongoDB Enterprise Advanced also gives you comprehensive operational tooling, advanced analytics and data visualization, platform integrations and certification, along with on-demand training for your teams.
+
+MongoDB Enterprise Server comes with:
+
+- In-memory Storage Engine - deliver high throughput and predictable low latency
+
+- Encrypted Storage Engine - encrypt your data at rest
+
+- Advanced Security - secure your data with LDAP and Kerberos access controls, automatic field-level encryption, and comprehensive auditing
+
+
+### [React](https://reactjs.org/docs/getting-started.html)
+
+___React is a JavaScript library for building user interfaces.___
+
+
+### [Express](https://expressjs.com)
+___Fast, unopinionated, minimalist web framework for Node.js___
+
+---
+
+
 
 #### To start the project please delete any node_module folders you may have folder
 
