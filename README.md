@@ -15,7 +15,8 @@ What you  will need to get started is:
 - [ ] Database connection called [MongoDB](https://www.mongodb.com/cloud/atlas) 
 - [ ] an "env" file that has your code based enviromental variables.  
 
-Please create an ".env" file in the root of the project's directory.
+
+### Please create an ".env" file in the root of the project's directory.
 
 ```
 MONGO_URI="mongodb+srv://[username]:[password]@[location_of_resources/server]
@@ -23,7 +24,7 @@ JWT_SECRET=SomeRandomTextHereWithSomeNumbersAndSymbols!@$#%^&*()
 
 ```
 
-## Then place the contents here inside it (.env)
+
 ### Read how to setup a MongoDB  Atlast cluster and connecting to it using NodeJS API here below:
 [Setting up](https://docs.atlas.mongodb.com/tutorial/create-new-cluster/) a MondoDB Cluster
 [Connecting to a MondoDB Cluster](https://docs.atlas.mongodb.com/driver-connection/) using NodeJS
