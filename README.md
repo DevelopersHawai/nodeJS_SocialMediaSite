@@ -17,6 +17,12 @@ What you  will need to get started is:
 
 Please create an ".env" file in the root of the project's directory.
 
+```
+MONGO_URI="mongodb+srv://[username]:[password]@[location_of_resources/server]
+JWT_SECRET=SomeRandomTextHereWithSomeNumbersAndSymbols!@$#%^&*()
+
+```
+
 ## Then place the contents here inside it (.env)
 ### Read how to setup a MongoDB  Atlast cluster and connecting to it using NodeJS API here below:
 [Setting up](https://docs.atlas.mongodb.com/tutorial/create-new-cluster/) a MondoDB Cluster
@@ -33,9 +39,7 @@ For more information on [NodeJs Security](https://docs.mongodb.com/manual/core/s
       - [x] Showing / Read all users  (`is` public but no identifying information of other users unless login)  
 
 
-JWT_SECRET=SomeRandomTextHereWithSomeNumbersAndSymbols!@$#%^&*()
 
-```
 
 For more information on [NodeJs Security](https://docs.mongodb.com/manual/core/security-scram/) or [Connections drivers](https://docs.mongodb.com/drivers/node) visit the corresponding links mentioned within this sentence.
 
