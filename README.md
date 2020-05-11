@@ -32,7 +32,8 @@ JWT_SECRET=SomeRandomTextHereWithSomeNumbersAndSymbols!@$#%^&*()
 For more information on [NodeJs Security](https://docs.mongodb.com/manual/core/security-scram/) or [Connections drivers](https://docs.mongodb.com/drivers/node) visit the corresponding links mentioned within this sentence.
 
 #### To Start the project out of the box:
-- [ ] type: `npm install` inside a terminal window
+Delete the node_module directory
+    - [ ] type: `npm install` inside a terminal window
     - [ ] If you have issues verify that the package.json mataches what I have
     - [ ] Once you get back all greens and no errors.... run `npm run dev`
     - [ ] createPostValidator changed the game when keeping spam profiles out.
