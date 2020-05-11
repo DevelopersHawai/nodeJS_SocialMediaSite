@@ -40,14 +40,7 @@ For more information on [NodeJs Security](https://docs.mongodb.com/manual/core/s
 Implemented the re-usage of http codes so that the user is restricted within 
 ### HTTP Status Codes
 
-- 400 Bad Request.
-- 401 Unauthorized.
-- 402 Payment Required.
-- 403 Forbidden.
-- 404 Not Found.
-- 405 Method Not Allowed.
-- 406 Not Acceptable.
-- See more at link [here](error_code_definitions.md)
+- See link [here](error_code_definitions.md)
 
 
 #### To Start the project out of the box:
@@ -73,4 +66,5 @@ Implemented the re-usage of http codes so that the user is restricted within
     - [x] Delete a post feature (so that people can save their reputation if things get wonky)
       - [x] In case someone tries to delete someone's else post they will be denied
       - [x] Security on the post to prevent random deletion
+   - [ ] Update a post
 

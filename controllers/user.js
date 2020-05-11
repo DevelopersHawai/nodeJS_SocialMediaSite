@@ -1,5 +1,5 @@
 const _ = require('lodash');
-const User = require("../models/user");
+const User = require('../models/user');
 
 //This is the method used to sort users by id
 exports.userById = (req, res, next , id) => {
