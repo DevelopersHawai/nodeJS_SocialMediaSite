@@ -73,6 +73,15 @@ Implemented the re-usage of http codes so that the user is restricted within
      - [x] update a title
      - [x] update a body
 
+
+
+## Cross-Orgin Resource Sharing (CORS) | MDN
+- [ ] Sharing that allows restricted resources on a webpage
+  - [ ] Usually requested from another domain outside the domain you are in
+    - [ ] Example private port serves on 8080
+    - [ ] Backend public port serves on 3000
+
+
 ## FrontEnd 
 
 - [ ] Visual webpage for public
@@ -94,3 +103,21 @@ Implemented the re-usage of http codes so that the user is restricted within
 - Sandra Quel - encouragement and being a good friend
 - Lillie from (LHH) for making things urgent and giving me deadlines
 
+
+
+### Packages used and gratitude to the contributors of:
+- The packages below  
+ 
+      - npm i dotenv
+      - npm i mongodb
+      - npm i mongoose
+      - npm i body-parser
+      - npm i body-parser
+      - npm i express-validator
+      - npm i uuid
+      - npm i uuidv1
+      - npm i jsonwebtoken
+      - npm i cookie-parser
+      - npm i express-jwt
+      - npm i lodash
+      - npm i cors
