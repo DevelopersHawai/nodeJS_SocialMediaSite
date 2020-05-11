@@ -24,13 +24,6 @@ Please create an ".env" file in the root of the project's directory.
 
 For more information on [NodeJs Security](https://docs.mongodb.com/manual/core/security-scram/) or [Connections drivers](https://docs.mongodb.com/drivers/node) visit the corresponding links mentioned within this sentence.
 
-
-Implemented the re-usage of http codes so that the user is restricted within 
-### HTTP Status Codes
-
-- See link [here](error_code_definitions.md)
-
-
 #### To Start the project out of the box:
 - [ ] type: `npm install` inside a terminal window
     - [ ] If you have issues verify that the package.json mataches what I have
