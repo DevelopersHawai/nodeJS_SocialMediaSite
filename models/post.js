@@ -18,7 +18,7 @@ const postSchema = new mongoose.Schema({
         // as it might be effecting the model ref in route post indirectly
     postedBy: { //Assigns ObjectId as a post and makes it come from a user
         type: ObjectId,
-        ref: 'User' 
+        ref: "User" 
         },
 
         created: {

@@ -21,7 +21,7 @@ router.get("/signout", signout); //signout
 
 
 //any route containing userId, our app will first execute userByID
-router.param("userID", userById);
+router.param('userId', userById); //the capital D was breaking new posts
 
 //Then we package the entire file as a function to be used as "router" later
 module.exports = router;

@@ -12,7 +12,7 @@ const {getPosts,
         updatePost,
         deletePost
     } = require("../controllers/post");
-const { authorization_secret_test } = require('../controllers/secret_tests');
+
 //const {createPost} = require("../controllers/post");  //This is using the "object destructuring"
 const { requireSignin } = require("../controllers/auth"); //middleware to the get amd post routes
 const { userById } = require("../controllers/user"); // This method could be used anywhere
@@ -23,12 +23,8 @@ const router = express.Router();
 
 router.get("/", getPosts); // to lock down public posts
 
-router.post("/post/new/:userId", requireSignin, createPost, createPostValidator ); //validator method
-//The above line looks at the app for middleware
-
-
-router.get("/authenticateTests/", requireSignin, postsByUser, authorization_secret_test);
-
+// The router here allows us to post information
+router.post("/post/new/:userId", requireSignin, createPost, createPostValidator);
 
 //It is not manadatory to have requireSignin, although
 router.get("/posts/by/:userId", requireSignin, postsByUser); //comes from the req.profile

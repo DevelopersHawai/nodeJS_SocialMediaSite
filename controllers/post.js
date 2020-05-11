@@ -38,21 +38,22 @@ exports.getPosts = (req, res) => {
 };
 
 
-//create a post
+//create a post uses library called formidable
 exports.createPost = (req, res, next) => {
     let form = new formidable.IncomingForm();
     form.keepExtensions = true;
     form.parse(req, (err, fields, files) => {
         if (err) {
-            return res.stus(400).json({
+            return res.status(400).json({
                 error: "Image could not be uploaded"
             });
         }
-        //I will review this one a few more times as this is where the magic happens
         let post = new Post(fields);
-        req.profile.hashed_password = undefined;  //Hides the users confidential information
-        req.profile.salt = undefined;  //Uses Salt to mix it up more
+
+        req.profile.hashed_password = undefined;
+        req.profile.salt = undefined;
         post.postedBy = req.profile;
+
         if (files.photo) {
             post.photo.data = fs.readFileSync(files.photo.path);
             post.photo.contentType = files.photo.type;
@@ -63,11 +64,22 @@ exports.createPost = (req, res, next) => {
                     error: err
                 });
             }
-            res.json(result)
+            res.json(result);
         });
     });
-
 };
+
+//Old post method
+// exports.createPost = (req, res, next) => {
+// const post = new Post(req.body);
+// post.save().then(result =>{
+//     res.json({
+//         post: result
+//     });
+// });
+// };
+
+
 
 // id numbers are about as usual as IP numbers, the method below returns:
 //All posts_by_user 
