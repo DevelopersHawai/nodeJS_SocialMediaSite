@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../fullstack"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "fullstack"
+	}
+}
