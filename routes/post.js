@@ -21,7 +21,7 @@ const {createPostValidator} = require("../validator"); // you dont need to put i
 //The router allows us to get receive information
 const router = express.Router();
 
-router.get("/", getPosts); // to lock down public posts
+router.get("/posts", getPosts); // to lock down public posts turn on require Signin this will return all posts
 
 // The router here allows us to post information
 router.post("/post/new/:userId", requireSignin, createPost, createPostValidator);

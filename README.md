@@ -73,4 +73,24 @@ Implemented the re-usage of http codes so that the user is restricted within
      - [x] update a title
      - [x] update a body
 
+## FrontEnd 
+
+- [ ] Visual webpage for public
+  - [ ] Setting up the end points for sessions with definitions 
+
+
+
+## Marketing / Launching Plan
+- [ ] To be review on LHH site
+
+
+
+
+
+### A Special Thanks to:
+
+- Ryan Dhungel - giving me a new insight on code
+- Damaris Tercero - the endless food and coffee
+- Sandra Quel - encouragement and being a good friend
+- Lillie from (LHH) for making things urgent and giving me deadlines
 
