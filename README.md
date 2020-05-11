@@ -50,21 +50,27 @@ Implemented the re-usage of http codes so that the user is restricted within
     - [ ] createPostValidator changed the game when keeping spam profiles out.
     - [ ] Manage CRUD Users is the sweet spot where I went to sleep at 2:53am EST May 6, 2020 figuring it out "ha ha"
       - [x] Showing / Read all users  (`is` public but no identifying information of other users unless login)  
-      - [x] Show a user profile
-      - [x] Create and Setup Tokens for users so required sign is needed to view other users' profile
-      - [x] Update User complete, as user must be authenticated to update their own profile
-      - [x] Delete User, Now accessible, for those who want to terminate membership, provides a message similar to:
-```
- "User Deleted successfully"
-```
-- [ ] User Posts:
+### User Profile features
+
+- [x] Create and Setup Tokens for users so required sign is needed to view other users' profile
+- [x] Read Show a user profile
+- [x] Update User complete, as user must be authenticated to update their own profile
+- [x] Delete User, Now accessible, for those who want to terminate membership
+
+
+### Post Features
+
+- [ ] Create a Post
     - [x] Add title (prints the input digested)
     - [x] Add body  (prints the input digested)
     - [ ] Add photo(s)
-    - [x] Get all posts by all users
+- [x] Get all posts by all users [does not require login](https://github.com/Hawaiideveloper/nodeJS_SocialMediaSite/blob/0c7a360a5c48154986ce8a158b5021624b452ce3/routes/post.js#L24)
     - [x] Get posts by a particular user
-    - [x] Delete a post feature (so that people can save their reputation if things get wonky)
+- [x] Delete a post feature (so that people can save their reputation if things get wonky)
       - [x] In case someone tries to delete someone's else post they will be denied
       - [x] Security on the post to prevent random deletion
-   - [ ] Update a post
+- [x] Update a post
+     - [x] update a title
+     - [x] update a body
+
 
