@@ -3,6 +3,26 @@
 ### Please checkout the latest branch for the lastest newest features available in this project.
 As this project will be updated nightly and tested daily, until its completion.
 
+
+
+First Step:
+A request is sent to profile update
+...........This is what the url will look like
+...........http://localhost:8080/profile/userid933jdghdgxv876
+
+when there is a userID in the incoming request(url)
+.......based on that userID
+.......our backend will make a query to a database and load that user information (name, email, etc.)
+.......then we will add that information to the request object.
+
+
+
+
+
+
+
+
+
 In its current configuration it is in a contributor status and only software engineers / hobbyists 
 who understand the basic instructions below are able to view the project as functional
 
@@ -45,3 +65,4 @@ Delete the node_module directory
 
 For more information on [NodeJs Security](https://docs.mongodb.com/manual/core/security-scram/) or [Connections drivers](https://docs.mongodb.com/drivers/node) visit the corresponding links mentioned within this sentence.
 
+Also be sure to checkout Regular expression site for [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) if you see somewhere I can improve, please test your expression, then submit a PR and I will give credit where it is due.  
