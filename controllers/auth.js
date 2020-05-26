@@ -23,22 +23,23 @@ exports.signup = async (req, res) => {
 };
 
 exports.signin = (req, res) => {
-    // find the user based on email
-    const { email, password } = req.body;
+
+    //find the user based on email
+
+
+const { email, password } = req.body;
     User.findOne({ email }, (err, user) => {
-        // if err or no user
-        if (err || !user) {
-            return res.status(401).json({
-                error: 'User with that email does not exist. Please signup.'
-            });
-        }
-        // if user is found make sure the email and password match
-        // create authenticate method in model and use here
-        if (!user.authenticate(password)) {
-            return res.status(401).json({
-                error: 'Email and password do not match'
-            });
-        }
+    //if  no user or error 
+        if (!user || err ) {  
+                return res.status(401).json({
+                        error: "User with the email entered does not exist.  Please signup!"
+                                            });
+                            } 
+        if(!user.authenticate(password)) { // If user exists, but the passowrd is wrong
+                return res.status(401).json({
+                        error: "User with the email entered does not exist or does not match.  Please signup!"
+});
+}
 
 
 
