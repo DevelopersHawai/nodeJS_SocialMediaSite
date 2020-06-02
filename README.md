@@ -65,7 +65,7 @@ Delete the node_module directory
  - [x] [Sanitization](https://express-validator.github.io/docs/sanitization.html) clean input 
  - [x] [Custom Validators](https://express-validator.github.io/docs/custom-validators-sanitizers.html)
  - [ ] Refactor the base library and implement a custom security model
- - [ ] Validation middlewares [(API)](https://express-validator.github.io/docs/check-api.html)  
+ - [x] Validation middlewares [(API)](https://express-validator.github.io/docs/check-api.html)  
 
 
 For more information on [NodeJs Security](https://docs.mongodb.com/manual/core/security-scram/) or [Connections drivers](https://docs.mongodb.com/drivers/node) visit the corresponding links mentioned within this sentence.
