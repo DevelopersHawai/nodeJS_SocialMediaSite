@@ -60,7 +60,12 @@ Delete the node_module directory
     - [ ] Manage CRUD Users is the sweet spot where I went to sleep at 2:53am EST May 6, 2020 figuring it out "ha ha"
       - [x] Showing / Read all users  (`is` public but no identifying information of other users unless login)  
 
-
+###  Express-Validator
+ - [x] Start here for in depth [explaination](https://express-validator.github.io/docs/) 
+ - [x] [Sanitization](https://express-validator.github.io/docs/sanitization.html) clean input 
+ - [x] [Custom Validators](https://express-validator.github.io/docs/custom-validators-sanitizers.html)
+ - [ ] Refactor the base library and implement a custom security model
+ - [ ] Validation middlewares [(API)](https://express-validator.github.io/docs/check-api.html)  
 
 
 For more information on [NodeJs Security](https://docs.mongodb.com/manual/core/security-scram/) or [Connections drivers](https://docs.mongodb.com/drivers/node) visit the corresponding links mentioned within this sentence.
