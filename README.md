@@ -32,6 +32,7 @@ Implemented the re-usage of http codes so that the user is restricted within
 
 
 #### To Start the project out of the box:
+- [ ] git clone it... then change to its directory 
 - [ ] type: `npm install` inside a terminal window
     - [ ] If you have issues verify that the package.json mataches what I have
     - [ ] Once you get back all greens and no errors.... run `npm run dev`
