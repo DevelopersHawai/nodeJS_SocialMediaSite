@@ -43,9 +43,9 @@ Implemented the re-usage of http codes so that the user is restricted within
     - [ ] Manage CRUD Users is the sweet spot where I went to sleep at 2:53am EST May 6, 2020 figuring it out "ha ha"
       - [x] Showing / Read all users  (`is` public but no identifying information of other users unless login)  
 
-
+#### .env file
+```
 JWT_SECRET=SomeRandomTextHereWithSomeNumbersAndSymbols!@$#%^&*()
-
 ```
 
 For more information on [NodeJs Security](https://docs.mongodb.com/manual/core/security-scram/) or [Connections drivers](https://docs.mongodb.com/drivers/node) visit the corresponding links mentioned within this sentence.
