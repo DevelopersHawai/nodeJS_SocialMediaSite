@@ -36,6 +36,9 @@ Implemented the re-usage of http codes so that the user is restricted within
 - [ ] type: `npm install` inside a terminal window
     - [ ] If you have issues verify that the package.json mataches what I have
     - [ ] Once you get back all greens and no errors.... run `npm run dev`
+    
+ 
+ #### Hints, eggs, and [issues](https://github.com/Hawaiideveloper/nodeJS_SocialMediaSite/issues)
     - [ ] createPostValidator changed the game when keeping spam profiles out.
     - [ ] Manage CRUD Users is the sweet spot where I went to sleep at 2:53am EST May 6, 2020 figuring it out "ha ha"
       - [x] Showing / Read all users  (`is` public but no identifying information of other users unless login)  
