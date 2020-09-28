@@ -72,4 +72,4 @@ For more information on [NodeJs Security](https://docs.mongodb.com/manual/core/s
 
 Also be sure to checkout Regular expression site for [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) if you see somewhere I can improve, please test your expression, then submit a PR and I will give credit where it is due.  
 
-now adding new content, I am now returning to this project
+Depend bot updates
