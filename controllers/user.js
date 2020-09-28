@@ -35,6 +35,7 @@ exports.allUsers = (req, res ) => {
                 error: err
             })
         }
+        //changed this line below so that it could be identified as an array and not an object
         res.json(users);
     }).select("name email updated created"); // This is where you print back to all user function
     // You should make it kick back only usernames of people, but the usernames are by company name
