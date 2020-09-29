@@ -64,6 +64,7 @@ Delete the node_module directory
  - [x] Start here for in depth [explaination](https://express-validator.github.io/docs/) 
  - [x] [Sanitization](https://express-validator.github.io/docs/sanitization.html) clean input 
  - [x] [Custom Validators](https://express-validator.github.io/docs/custom-validators-sanitizers.html)
+ - [ ] [Fixed the object issue with returning all users within mapped fields](https://github.com/Hawaiideveloper/nodeJS_SocialMediaSite/commit/bc72dfdca13b8af3bee701cba4caefa375df4aaa)
  - [ ] Refactor the base library and implement a custom security model
  - [x] Validation middlewares [(API)](https://express-validator.github.io/docs/check-api.html)  
 
@@ -72,4 +73,3 @@ For more information on [NodeJs Security](https://docs.mongodb.com/manual/core/s
 
 Also be sure to checkout Regular expression site for [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) if you see somewhere I can improve, please test your expression, then submit a PR and I will give credit where it is due.  
 
-Depend bot updates
