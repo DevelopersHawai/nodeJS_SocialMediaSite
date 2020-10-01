@@ -38,14 +38,23 @@ What you  will need to get started is:
 
 ### Please create an ".env" file in the root of the project's directory.
 
-```
 
+
+############################## env file #############################################
+
+'''
 MONGO_URI="mongodb+srv://[username]:[password]@[location_of_resources:[port_to_mongoDB]/server]
 JWT_SECRET=SomeRandomTextHereWithSomeNumbersAndSymbols!@$#%^&*()
-
+'''
 PORT=8080
 
-```
+
+
+############################### end of env file #######################################
+
+
+
+
 
 
 ### Read how to setup a MongoDB  Atlast cluster and connecting to it using NodeJS API here below:
