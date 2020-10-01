@@ -42,10 +42,11 @@ What you  will need to get started is:
 
 ############################## env file #############################################
 
-'''
-MONGO_URI="mongodb+srv://[username]:[password]@[location_of_resources:[port_to_mongoDB]/server]
+```
+MONGO_URI="mongodb+srv://[username]:[password]@[location_of_resources:[port_to_mongoDB]/server]"
+
 JWT_SECRET=SomeRandomTextHereWithSomeNumbersAndSymbols!@$#%^&*()
-'''
+```
 PORT=8080
 
 
