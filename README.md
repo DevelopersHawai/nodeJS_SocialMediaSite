@@ -1,5 +1,35 @@
 # Node JS project for a social media site version 2.0
 
+
+## What you  will need to get started is:
+- [ ] Node.js  
+- [ ] Database connection called [MongoDB](https://www.mongodb.com/cloud/atlas) 
+- [ ] an "env" file that has your code based enviromental variables.  
+
+
+### Please create an ".env" file in the root of the project's directory.
+############################## env file #############################################
+
+```
+MONGO_URI="mongodb+srv://[username]:[password]@[location_of_resources:[port_to_mongoDB]/server]"
+
+JWT_SECRET=SomeRandomTextHereWithSomeNumbersAndSymbols!@$#%^&*()
+```
+PORT=8080
+
+
+
+############################### end of env file #######################################
+
+
+
+#### To Start the project out of the box:
+  - [x] First make sure after your clone, to Delete the `any ` node_module directory    
+  - [x] If you have issues verify that the package.json mataches what I have 
+  - [x] type: `npm install` inside a terminal window 
+  - [x] Once you get back all greens and no errors.... run `npm run dev`  
+
+
 ### Please checkout the latest branch for the lastest newest features available in this project.
 As this project will be updated and tested as my full-time job requires a lot of me.
 
@@ -30,28 +60,12 @@ who understand the basic instructions below are able to view the project as func
 .. Latest branch was recorded [here](https://github.com/Hawaiideveloper/nodeJS_SocialMediaSite/branches)
  
  
-What you  will need to get started is:
-- [ ] Node.js  
-- [ ] Database connection called [MongoDB](https://www.mongodb.com/cloud/atlas) 
-- [ ] an "env" file that has your code based enviromental variables.  
-
-
-### Please create an ".env" file in the root of the project's directory.
 
 
 
-############################## env file #############################################
-
-```
-MONGO_URI="mongodb+srv://[username]:[password]@[location_of_resources:[port_to_mongoDB]/server]"
-
-JWT_SECRET=SomeRandomTextHereWithSomeNumbersAndSymbols!@$#%^&*()
-```
-PORT=8080
 
 
 
-############################### end of env file #######################################
 
 
 
@@ -64,12 +78,6 @@ PORT=8080
 
 For more information on [NodeJs Security](https://docs.mongodb.com/manual/core/security-scram/) or [Connections drivers](https://docs.mongodb.com/drivers/node) visit the corresponding links mentioned within this sentence.
 
-#### To Start the project out of the box:
-Delete the node_module directory  
-
-  - [x] type: `npm install` inside a terminal window  
-  - [x] If you have issues verify that the package.json mataches what I have  
-  - [x] Once you get back all greens and no errors.... run `npm run dev`  
   
 
 
