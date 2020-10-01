@@ -67,13 +67,10 @@ For more information on [NodeJs Security](https://docs.mongodb.com/manual/core/s
 #### To Start the project out of the box:
 Delete the node_module directory  
 
-  - [ ] type: `npm install` inside a terminal window  
-  - [ ] If you have issues verify that the package.json mataches what I have  
-  - [ ] Once you get back all greens and no errors.... run `npm run dev`  
-    - [ ] createPostValidator changed the game when keeping spam profiles out.  
-    - [ ] Manage CRUD Users is the sweet spot where I went to sleep at 2:53am EST May 6, 2020 figuring it out "ha ha"  
-      - [x] Showing / Read all users  (`is` public but no identifying information of other users unless login)  
-      - [ ] 
+  - [x] type: `npm install` inside a terminal window  
+  - [x] If you have issues verify that the package.json mataches what I have  
+  - [x] Once you get back all greens and no errors.... run `npm run dev`  
+  
 
 
 ###  Express-Validator
@@ -89,3 +86,7 @@ For more information on [NodeJs Security](https://docs.mongodb.com/manual/core/s
 
 Also be sure to checkout Regular expression site for [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) if you see somewhere I can improve, please test your expression, then submit a PR and I will give credit where it is due.  
 
+ CreatePostValidator changed the game when keeping spam profiles out.  
+Manage CRUD Users is the sweet spot where I went to sleep at 2:53am EST May 6, 2020 figuring it out "ha ha"  
+Showing / Read all users  (`is` public but no identifying information of other users unless login)  
+ 
