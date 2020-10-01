@@ -73,4 +73,4 @@ Delete the node_module directory
 For more information on [NodeJs Security](https://docs.mongodb.com/manual/core/security-scram/) or [Connections drivers](https://docs.mongodb.com/drivers/node) visit the corresponding links mentioned within this sentence.
 
 Also be sure to checkout Regular expression site for [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) if you see somewhere I can improve, please test your expression, then submit a PR and I will give credit where it is due.  
-
+ 
